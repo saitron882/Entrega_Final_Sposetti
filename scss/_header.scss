@@ -1,0 +1,21 @@
+header {
+	background-color: $background-color_1;
+	border: black 2px solid;
+}
+
+
+.barra_top {
+	font-size: 25px;
+	text-align: right;
+	list-style: none;
+	margin-right: 8px;
+	margin-top: 10px;
+}
+
+
+.logo {
+	text-align: left;
+	position: relative;
+	bottom: 18px;
+	left: 8px;
+}

@@ -1,0 +1,15 @@
+.ordenar_contenedor {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+}
+
+
+
+.borde {
+	border: black 2px solid;
+	padding: 10px;
+	background: #ff9800;
+	margin: 20px;
+	border-radius: 15px;
+}

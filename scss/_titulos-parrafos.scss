@@ -1,0 +1,50 @@
+@mixin parrafos_inicio ($color) {
+	margin: 15px 25px 0 25px;
+	display: block;
+	color: $color;
+	text-align: center;
+}
+
+@mixin titulos ($nombre_tit, $size) {
+	grid-area: $nombre_tit;
+	font-size: $size;
+	margin: 15px 25px 0 25px;
+	display: block;
+	color: $color_2;
+	text-align: center;
+}
+
+
+.parrafo_inicio {
+	grid-area: parrafo_inicio;
+	@include parrafos_inicio($color_2)
+}
+
+.titulo_4 {
+	@include titulos(titulo_1, 50px);
+	position: relative; top: 20px;
+}
+
+
+.descripcion {
+	display: block;
+	color: $color_2;
+	position: relative;
+	left: 20px;
+	text-align: center;
+}
+
+
+.titulo_1 {
+	@include titulos(titulo_1, 50px)
+}
+
+
+.titulo_2 {
+	@include titulos(titulo_2, 40px)
+}
+
+
+.titulo_3 {
+	@include titulos(titulo_3, 40px)
+}

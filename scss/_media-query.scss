@@ -1,0 +1,101 @@
+.input_1{grid-area: input_1;}
+
+
+.input_2{grid-area: input_2;}
+
+
+.input_3{grid-area: input_3;}
+
+
+.input_4{grid-area: input_4;}
+
+
+.pregunta_textarea{grid-area: pregunta_textarea;}
+
+
+textarea{
+        grid-area: textarea;
+    }
+
+
+.contenedor_impesoras{grid-area: contenedor_impesoras;}
+
+
+.cont_padre_materiales{grid-area: cont_padre_materiales;}
+
+
+@media screen and (max-width:768px) {
+
+    
+    .imagen_parrafo{display: flex;
+    justify-content: center;}
+    
+
+    .cont_materiales{display: flex;
+        justify-content: center;}
+
+
+    .main_nosotros{display: grid;
+        grid-template-areas:
+        "titulo_1"
+        "parrafo_inicio"
+        "titulo_2"
+        "contenedor_impesoras"
+        "titulo_3"
+        "cont_padre_materiales";}
+
+
+    header{height: 120px;}
+
+    .borrar_movile{display: none;}
+
+
+    .barra_top{
+        display: flex;
+        justify-content: center;
+        font-size: 20px;
+    }
+
+
+    .logo{width: 75%;
+        position: relative;
+        top: 12px;
+        margin-left: 50px;}
+
+
+    form{
+        display: grid;
+        grid-template-areas: 
+        "input_1"
+        "input_2"
+        "input_3"
+        "input_4"
+        "pregunta_textarea"
+        "textarea"
+        "botones";
+        gap: 5px;
+    }
+
+
+    .borde{
+        width: 50%;
+        height: 50%;
+    }
+}
+
+
+@media screen and (min-width:769px) {
+    .logo{width: 30%;}
+
+    
+    form{
+        display: grid;
+        grid-template-areas: 
+        "input_1 input_2"
+        "input_3 input_4"
+        "pregunta_textarea none"
+        "textarea textarea"
+        "botones botones";
+        gap: 5px;
+    }
+}

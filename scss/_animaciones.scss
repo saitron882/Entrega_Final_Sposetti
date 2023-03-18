@@ -1,0 +1,31 @@
+header nav ul li a {
+	&:hover {
+		background: rgb(255, 128, 0);
+	}
+}
+
+
+.gris {
+	filter: grayscale(80%);
+	&:hover {
+		filter: grayscale(0%);
+		transition: 1s;
+	}
+}
+
+
+input {
+	&:focus {
+		background-color: $background-color_6;
+		transition: 1s;
+	}
+}
+
+
+textarea {
+	&:focus {
+		background-color: $background-color_6;
+		transition: 1s;
+	}
+}
+

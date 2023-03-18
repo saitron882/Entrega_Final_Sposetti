@@ -1,0 +1,24 @@
+@mixin comun_botones ($color_borde, $color_letra, $color_fondo) {
+    border: 1px solid $color_borde;
+	padding: 5px;
+	background-color: $color_fondo;
+	color: $color_letra;
+	text-decoration: none;
+	text-transform: uppercase;
+	border-radius: 10px;
+}
+
+
+.boton_c {
+	@include comun_botones($color_1, $color_2,$background-color_3)
+}
+.boton_a {
+	position: relative; left: 5px;
+	@include comun_botones($color_1, $color_2, $background-color_4)
+}
+
+.botones {
+	display: flex;
+	justify-content: right;
+	grid-area: botones;
+}
