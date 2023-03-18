@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"><meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/estilo.css">
     <title>Print3design</title>
     <meta name="description" content="Ubicación de nuestro emprendimiento Print3design.">
@@ -28,8 +29,8 @@
             <p class="parrafo_inicio">Nos encontramos en zona norte, en el barrio Poeta Lugones. En la calle Manuel mijuca laines al 3680. Todavía no disponemos de un local sino que trabajomos desde casa, abajo se encuentran dos fotos de la fachada de la misma.</p>
         </div>
         <div class="ordenar_contenedor">
-            <img class="borde" src="../img/fachada_1.jpeg" alt="Fachada de la casa">
-            <img class="borde" src="../img/fachada_2.jpeg" alt="Fachada de la casa">
+            <img class="borde" data-aos="fade-up-right" src="../img/fachada_1.jpeg" alt="Fachada de la casa">
+            <img class="borde" data-aos="fade-up-left" src="../img/fachada_2.jpeg" alt="Fachada de la casa">
         </div>
     </main>
     <footer>
@@ -40,4 +41,8 @@
             </ul>
         </nav>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
